@@ -14,15 +14,16 @@
 }
 
 
-html, body{
-    background-color: rgb(255,250,238);
+html,
+body {
+    background-color: rgb(255, 250, 238);
     background-image: url(../res/squaredbackground.png);
     font-family: 'BerlinDB';
     padding: 0px;
 }
 
-.nav{
-    background-color: rgb(50,50,147);
+.nav {
+    background-color: rgb(50, 50, 147);
     width: 100vw;
     height: 20vw;
     position: sticky;
@@ -31,7 +32,7 @@ html, body{
     align-items: flex-end;
 }
 
-.navcontent{
+.navcontent {
     display: flex;
     width: 100%;
     height: 100%;
@@ -40,7 +41,7 @@ html, body{
     padding: 3%;
 }
 
-.icon{
+.icon {
     width: 50%;
     height: 100%;
     display: flex;
@@ -49,28 +50,28 @@ html, body{
     align-items: flex-end;
 }
 
-.icondesc{
+.icondesc {
     display: none;
     font-family: 'BerlinR';
 }
 
 
-.icon>a{
+.icon>a {
     max-width: 30%;
     margin: 2%;
     margin-bottom: 0px;
 }
 
-#titrepc{
+#titrepc {
     display: none;
 }
 
-#logo{
+#logo {
     max-width: 22%;
     margin-left: 8%;
 }
 
-.page{
+.page {
     height: 100%;
     width: 100vw;
     margin: 0px;
@@ -78,107 +79,108 @@ html, body{
     z-index: -5;
 }
 
-.pagecontent{
+.pagecontent {
     max-width: 1000px;
 }
 
-p{
+p {
     font-family: 'JBMono', monospace;
 }
 
-.ligne{
+.ligne {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5vh;
     align-items: flex-start;
 }
 
-#titreh1{
-    background-color: rgb(50,50,147);
+#titreh1 {
+    background-color: rgb(50, 50, 147);
     width: 100%;
     margin-top: 0px;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
-h1{
+h1 {
     color: white;
     align-self: center;
     font-size: 3rem;
     text-align: center;
 }
 
-.titreh2{
+.titreh2 {
     display: flex;
     margin-top: 15%;
     margin-left: 10%;
 }
 
-h2{
+h2 {
     font-size: 2.5rem;
     margin: 0px;
 }
 
-#profil>h2{
-    color: rgb(232,103,40);
+#profil>h2 {
+    color: rgb(232, 103, 40);
 }
 
-#project>h2{
-    color: rgb(187,68,247);
+#project>h2 {
+    color: rgb(187, 68, 247);
     margin-top: 12px;
 }
 
-#contact>h2{
-    color: rgb(46,175,141);
+#contact>h2 {
+    color: rgb(46, 175, 141);
     margin-top: 12px;
 }
 
-.profilsmol{
+.profilsmol {
     width: 35%;
     border: 2px solid black;
-    box-shadow: -12px 12px rgb(232,103,40);
+    box-shadow: -12px 12px rgb(232, 103, 40);
     background: white;
 }
 
-#cvtextpc{
+#cvtextpc {
     display: none;
 }
 
-#cvtextmob{
+#cvtextmob {
     display: block;
 }
 
-#cv{
+#cv {
     width: 10%;
     float: right;
     margin-top: 5%;
 }
 
-.profiltext{
+.profiltext {
     padding: 15px;
     margin: 0px;
 }
 
-.profillarge{
+.profillarge {
     background: white;
     width: 80%;
     border: 2px solid black;
-    box-shadow: -12px 12px rgb(232,103,40);
+    box-shadow: -12px 12px rgb(232, 103, 40);
 }
 
-.projectlarge{
+.project {
+    border: 2px solid black;
+    box-shadow: -12px 12px rgb(187, 68, 247);
+}
+
+.project.large {
     width: 80%;
-    border: 2px solid black;
-    box-shadow: -12px 12px rgb(187,68,247);
 }
 
-.projectsmol{
+.project.smol {
     width: 35%;
-    border: 2px solid black;
-    box-shadow: -12px 12px rgb(187,68,247);
 }
 
-.projectdesc{
+.projectdesc {
     position: absolute;
     font-family: inherit;
     color: white;
@@ -187,81 +189,47 @@ h2{
     display: none;
 }
 
-#cursedtale:hover .projectdesc{
+.project:hover .projectdesc {
     display: block;
     z-index: 6;
 }
 
-#cursedtale:hover img{
-    filter: sepia(75%);
-}
-
-#overbot:hover .projectdesc{
-    display: block;
-    z-index: 6;
+.project.black:hover .projectdesc {
     color: black;
 }
 
-#overbot:hover img{
+.project:hover img {
     filter: sepia(75%);
 }
 
-#dashheroes:hover .projectdesc{
-    display: block;
-    z-index: 6;
-    color: black;
-}
-
-#dashheroes:hover img{
-    filter: sepia(75%);
-}
-
-#mightyrpg:hover .projectdesc{
-    display: block;
-    z-index: 6;
-}
-
-#mightyrpg:hover img{
-    filter: sepia(75%);
-}
-
-#dames:hover .projectdesc{
-    display: block;
-    z-index: 6;
-}
-
-#dames:hover img{
-    filter: sepia(100%);
-}
-
-.contactlarge{
+.contactlarge {
     width: 80%;
     border: 2px solid black;
-    box-shadow: -12px 12px rgb(46,175,141);
+    box-shadow: -12px 12px rgb(46, 175, 141);
     background-color: white;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-.coord{
+.coord {
     text-align: center;
     margin: 0px;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     background: rgb(235, 189, 39);
 }
 
-footer>p{
+footer>p {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 @media (min-width: 1000px) {
 
-    .nav{
+    .nav {
         position: fixed;
         width: calc(50% - 200px);
         height: 100%;
@@ -271,7 +239,7 @@ footer>p{
         top: 0px;
     }
 
-    .navcontent{
+    .navcontent {
         width: 300px;
         height: 100%;
         padding: 20px;
@@ -280,28 +248,28 @@ footer>p{
         justify-content: center;
         align-items: center;
     }
-    
-    #logo{
+
+    #logo {
         margin-left: 0px;
         max-width: 100%;
         margin-top: 40%;
         margin-bottom: 10%;
     }
 
-    #titrepc{
+    #titrepc {
         display: block;
         margin-bottom: 30%;
         font-size: 2.5rem;
     }
 
-    .icon{
+    .icon {
         margin: 0%;
         width: 100%;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .icondesc{
+    .icondesc {
         display: block;
         text-align: start;
         font-size: 1.7rem;
@@ -310,19 +278,19 @@ footer>p{
         padding-left: 5%;
     }
 
-    #iconprofil{
-        color: rgb(232,103,40);
+    #iconprofil {
+        color: rgb(232, 103, 40);
     }
 
-    #iconproject{
-        color: rgb(187,68,247);
+    #iconproject {
+        color: rgb(187, 68, 247);
     }
 
-    #iconcontact{
-        color: rgb(46,175,141);
+    #iconcontact {
+        color: rgb(46, 175, 141);
     }
 
-    .icon>a{
+    .icon>a {
         max-width: 100%;
         margin: 5%;
         display: flex;
@@ -330,43 +298,43 @@ footer>p{
         text-decoration: none;
     }
 
-    .icon>a>img{
+    .icon>a>img {
         width: 30%;
     }
 
-    p{
+    p {
         font-size: 1.2rem;
     }
 
-    .page{
+    .page {
         width: calc(50% + 200px);
         display: block;
         float: right;
     }
 
-    .pagecontent{
+    .pagecontent {
         width: 700px;
         box-sizing: border-box;
         float: left;
     }
 
-    #titreh1{
+    #titreh1 {
         display: none;
     }
 
-    .profiltext{
+    .profiltext {
         padding: 20px;
     }
 
-    #cvtextpc{
+    #cvtextpc {
         display: block;
     }
 
-    #cvtextmob{
+    #cvtextmob {
         display: none;
     }
 
-    footer{
+    footer {
         width: calc(50% + 200px);
         display: block;
         float: right;
